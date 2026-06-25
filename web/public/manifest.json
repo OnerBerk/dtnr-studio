@@ -1,0 +1,18 @@
+{
+  "name": "DTNR Studio",
+  "short_name": "DTNR",
+  "description": "DTNR Studio — application web Next.js.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "files.exclude": {
+    "web/tsconfig.tsbuildinfo": true,
+    "web/public/sw.js": true,
+    "web/public/sw.js.map": true,
+    "web/public/swe-worker-*.js": true,
+    "web/public/workbox-*.js": true,
+    "web/public/workbox-*.js.map": true,
+    "web/public/fallback-*.js": true,
+    "web/public/sitemap.xml": true,
+    "web/public/sitemap-*.xml": true,
+    "web/public/robots.txt": true
+  }
+}
