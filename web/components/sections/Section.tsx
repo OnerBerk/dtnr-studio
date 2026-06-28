@@ -13,7 +13,7 @@ export function Section({ id, title, children }: SectionProps) {
     <section
       id={id}
       aria-labelledby={headingId}
-      className="flex min-h-screen scroll-mt-16 flex-col items-center justify-center gap-6 px-4 text-center"
+      className="flex min-h-screen scroll-mt-16 flex-col items-center justify-center gap-6 px-6 text-center"
     >
       <h2
         id={headingId}

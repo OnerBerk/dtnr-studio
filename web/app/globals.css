@@ -19,6 +19,18 @@
   --radius: 0.5rem;
 }
 
+/*
+ * Accessibilité : anneau de focus visible UNIQUEMENT au clavier (Tab),
+ * pas au clic souris. À appliquer sur tout élément interactif
+ * (liens, boutons, champs) pour respecter les critères WCAG/RGAA.
+ */
+@utility focus-accessible {
+  &:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+  }
+}
+
 body {
   background-color: var(--color-background);
   color: var(--color-foreground);
