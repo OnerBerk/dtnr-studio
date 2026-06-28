@@ -2,7 +2,6 @@
 
 import { useForm, type SubmitHandler } from "react-hook-form";
 
-import { Section } from "@/components/sections/Section";
 import { CustomInput } from "@/components/ui/CustomInput";
 import { CustomTextarea } from "@/components/ui/CustomTextarea";
 
@@ -45,8 +44,19 @@ export function Contact() {
   };
 
   return (
-    <Section id="contact" title="Contact">
-      <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
+    <section
+      id="contact"
+      aria-labelledby="contact-heading"
+      className="flex min-h-screen scroll-mt-16 flex-col items-center justify-center gap-6 px-6 text-center"
+    >
+      <h2
+        id="contact-heading"
+        className="text-heading text-4xl font-bold tracking-tight sm:text-5xl"
+      >
+        Contact
+      </h2>
+
+      <div className="grid w-full max-w-[1250px] grid-cols-1 gap-4 md:grid-cols-2">
         <form
           noValidate
           onSubmit={handleSubmit(onSubmit)}
@@ -155,10 +165,11 @@ export function Contact() {
             Envoyer
           </button>
         </form>
+
         <div className="border-border col-span-1 hidden items-center justify-center border-2 text-center md:flex">
           Image a venir
         </div>
       </div>
-    </Section>
+    </section>
   );
 }

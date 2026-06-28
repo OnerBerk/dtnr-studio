@@ -1,3 +1,5 @@
+"use client";
+
 import type { ComponentPropsWithRef } from "react";
 
 const controlClassName =
@@ -14,6 +16,7 @@ export function CustomInput({
   className,
   placeholder,
   "aria-label": ariaLabel,
+  ref,
   ...rest
 }: CustomInputProps) {
   const errorId = `${id}-error`;
@@ -21,7 +24,9 @@ export function CustomInput({
   return (
     <div>
       <input
+        {...rest}
         id={id}
+        ref={ref}
         placeholder={placeholder}
         aria-label={ariaLabel ?? placeholder}
         aria-invalid={error ? "true" : "false"}
@@ -29,7 +34,6 @@ export function CustomInput({
         className={
           className ? `${controlClassName} ${className}` : controlClassName
         }
-        {...rest}
       />
 
       <p

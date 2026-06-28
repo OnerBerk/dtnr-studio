@@ -1,3 +1,5 @@
+"use client";
+
 import type { ComponentPropsWithRef } from "react";
 
 const controlClassName =
@@ -14,6 +16,7 @@ export function CustomTextarea({
   className,
   placeholder,
   "aria-label": ariaLabel,
+  ref,
   ...rest
 }: CustomTextareaProps) {
   const errorId = `${id}-error`;
@@ -21,7 +24,9 @@ export function CustomTextarea({
   return (
     <div>
       <textarea
+        {...rest}
         id={id}
+        ref={ref}
         placeholder={placeholder}
         aria-label={ariaLabel ?? placeholder}
         aria-invalid={error ? "true" : "false"}
@@ -31,7 +36,6 @@ export function CustomTextarea({
             ? `${controlClassName} resize-y ${className}`
             : `${controlClassName} resize-y`
         }
-        {...rest}
       />
 
       <p
