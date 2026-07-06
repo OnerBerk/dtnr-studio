@@ -55,8 +55,10 @@ export function Hero() {
               <span className="text-[50px] font-medium text-heading">
                 Studio
               </span>
-              <span className="text-[25px] italic ">Création 3D</span>
-              <span className="text-[25px] italic ">
+              <span className="text-[25px] font-light italic ">
+                Création 3D
+              </span>
+              <span className="text-[25px] font-light italic ">
                 Architecture d&apos;intérieur - Décoration
               </span>
             </div>
