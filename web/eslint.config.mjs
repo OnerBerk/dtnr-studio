@@ -2,6 +2,7 @@ import { defineConfig, globalIgnores } from "eslint/config";
 import nextVitals from "eslint-config-next/core-web-vitals";
 import nextTs from "eslint-config-next/typescript";
 import jsxA11y from "eslint-plugin-jsx-a11y";
+import eslintPluginBetterTailwindcss from "eslint-plugin-better-tailwindcss";
 import eslintConfigPrettier from "eslint-config-prettier/flat";
 
 const eslintConfig = defineConfig([
@@ -12,6 +13,28 @@ const eslintConfig = defineConfig([
   {
     name: "jsx-a11y/recommended",
     rules: jsxA11y.flatConfigs.recommended.rules,
+  },
+  {
+    name: "better-tailwindcss/line-wrapping",
+    plugins: {
+      "better-tailwindcss": eslintPluginBetterTailwindcss,
+    },
+    settings: {
+      "better-tailwindcss": {
+        entryPoint: "app/globals.css",
+      },
+    },
+    rules: {
+      "better-tailwindcss/enforce-consistent-line-wrapping": [
+        "warn",
+        {
+          printWidth: 80,
+          strictness: "loose",
+          group: "never",
+          indent: 2,
+        },
+      ],
+    },
   },
   // Disable ESLint rules that conflict with Prettier. Must stay last.
   eslintConfigPrettier,

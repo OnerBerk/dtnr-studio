@@ -1,4 +1,10 @@
 {
+  "prettier.configPath": "web/.prettierrc.json",
+  "prettier.prettierPath": "web/node_modules/prettier",
+  "eslint.workingDirectories": [{ "directory": "web", "changeProcessCWD": true }],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
   "files.exclude": {
     "web/tsconfig.tsbuildinfo": true,
     "web/public/sw.js": true,

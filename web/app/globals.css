@@ -1,9 +1,19 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Andale Teletext";
+  src:
+    url("/fonts/Andale-Teletext-Regular.woff2") format("woff2"),
+    url("/fonts/Andale-Teletext-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
-  --color-background: #ffffff;
+  --color-background: #dad5c5;
   --color-foreground: #171717;
-  --color-heading: #c1312c;
+  --color-heading: #ba452c;
 
   --color-primary: #4f46e5;
   --color-primary-foreground: #ffffff;
@@ -15,6 +25,7 @@
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-title: "Andale Teletext", var(--font-sans), system-ui, sans-serif;
 
   --radius: 0.5rem;
 }
