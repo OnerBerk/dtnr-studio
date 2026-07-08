@@ -1,4 +1,5 @@
 import SectionLayout from "../layout/section-layout";
+import { CustomButton } from "@/components/ui/CustomButton";
 import Image from "next/image";
 
 export function HeroMobile() {
@@ -46,17 +47,9 @@ export function HeroMobile() {
           sizes="100vw"
         />
 
-        <a
-          href="#contact"
-          className="
-            w-full border border-heading bg-heading px-6 py-3 text-center
-            text-xl font-medium text-primary-foreground transition-opacity
-            hover:opacity-90 focus-visible:outline-2
-            focus-visible:outline-offset-2 focus-visible:outline-current
-          "
-        >
+        <CustomButton scrollToId="contact" className="w-full text-xl">
           Nous contacter
-        </a>
+        </CustomButton>
       </div>
     </SectionLayout>
   );

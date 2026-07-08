@@ -39,9 +39,10 @@ export function Navbar() {
                 <a
                   href={`#${section.id}`}
                   className="
-                    rounded-sm text-sm font-light text-foreground
+                    f rounded-sm text-sm font-light text-foreground
                     focus-accessible transition-colors target:text-heading
                     hover:text-heading focus-visible:text-foreground md:text-3xl
+                    [&:target-current]:font-medium
                     [&:target-current]:text-heading
                   "
                 >
