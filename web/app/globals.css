@@ -10,6 +10,46 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("/fonts/ibm-plex/IBMPlexMono-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("/fonts/ibm-plex/IBMPlexMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("/fonts/ibm-plex/IBMPlexMono-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OL Round Gothic";
+  src: url("/fonts/OLRoundGothic_Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Roman";
+  src: url("/fonts/Helvetica_Roman.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --color-background: #d9d5c5;
   --color-foreground: #171717;
@@ -23,9 +63,14 @@
 
   --color-border: #e4e4e7;
 
-  --font-sans: var(--font-geist-sans);
+  --font-sans: "Helvetica Roman", var(--font-geist-sans), system-ui,
+    sans-serif;
   --font-mono: var(--font-geist-mono);
   --font-title: "Andale Teletext", var(--font-sans), system-ui, sans-serif;
+  --font-ibm-plex-mono: "IBM Plex Mono", var(--font-mono), ui-monospace,
+    monospace;
+  --font-ol-round-gothic: "OL Round Gothic", var(--font-sans), system-ui,
+    sans-serif;
 
   --radius: 0.5rem;
 }

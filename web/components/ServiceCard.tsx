@@ -29,14 +29,14 @@ export function ServiceCard({ service }: ServiceCardProps) {
           mt-auto flex h-[35vh] w-full flex-col justify-between bg-heading p-2
         "
       >
-        <h3
-          className="
-            text-3xl font-bold whitespace-pre-line text-primary-foreground
-          "
-        >
+        <h3 className="text-[24px] whitespace-pre-line text-primary-foreground">
           {service.label}
         </h3>
-        <p className="text-[100px] leading-none text-primary-foreground">
+        <p
+          className="
+            font-ibm-plex-mono text-[100px] leading-none text-primary-foreground
+          "
+        >
           {service.idx}.
         </p>
       </div>

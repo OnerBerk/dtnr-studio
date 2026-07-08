@@ -4,6 +4,8 @@ import { useForm, type SubmitHandler } from "react-hook-form";
 
 import { CustomInput } from "@/components/ui/CustomInput";
 import { CustomTextarea } from "@/components/ui/CustomTextarea";
+import SectionLayout from "../layout/section-layout";
+import { CustomButton } from "../ui/CustomButton";
 
 type ContactFormValues = {
   name: string;
@@ -44,19 +46,29 @@ export function Contact() {
   };
 
   return (
-    <section
+    <SectionLayout
       id="contact"
-      aria-labelledby="contact-heading"
-      className="flex min-h-screen scroll-mt-16 flex-col items-center justify-center gap-6 px-6 text-center"
+      ariaLabelledby="contact-heading"
+      className="
+        flex min-h-screen scroll-mt-16 flex-col items-center justify-center
+        gap-6 px-6 text-center
+      "
     >
       <h2
         id="contact-heading"
-        className="text-heading text-4xl font-bold tracking-tight sm:text-5xl"
+        className="
+          text-4xl font-bold tracking-tight text-heading sm:text-5xl
+        "
       >
         Contact
       </h2>
 
-      <div className="grid w-full max-w-[1250px] grid-cols-1 gap-4 md:grid-cols-2">
+      <div
+        className="
+          grid w-full max-w-[1250px] grid-cols-1 gap-5 border-2 border-border
+          p-4 md:grid-cols-2
+        "
+      >
         <form
           noValidate
           onSubmit={handleSubmit(onSubmit)}
@@ -107,7 +119,11 @@ export function Contact() {
             })}
           />
 
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <div
+            className="
+              grid grid-cols-1 gap-4 sm:grid-cols-2
+            "
+          >
             <CustomInput
               id="contact-postal-code"
               placeholder="Code postal"
@@ -157,19 +173,24 @@ export function Contact() {
             })}
           />
 
-          <button
+          <CustomButton
             type="submit"
             disabled={isSubmitting}
-            className="border-border block w-fit cursor-pointer rounded-md border-2 px-6 py-3 font-medium"
+            className="text-xl"
           >
             Envoyer
-          </button>
+          </CustomButton>
         </form>
 
-        <div className="border-border col-span-1 hidden items-center justify-center border-2 text-center md:flex">
+        <div
+          className="
+            col-span-1 hidden items-center justify-center border-2 border-border
+            text-center md:flex
+          "
+        >
           Image a venir
         </div>
       </div>
-    </section>
+    </SectionLayout>
   );
 }

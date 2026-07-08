@@ -39,11 +39,11 @@ export function Navbar() {
                 <a
                   href={`#${section.id}`}
                   className="
-                    f rounded-sm text-sm font-light text-foreground
-                    focus-accessible transition-colors target:text-heading
-                    hover:text-heading focus-visible:text-foreground md:text-3xl
-                    [&:target-current]:font-medium
-                    [&:target-current]:text-heading
+                    rounded-sm font-ol-round-gothic text-sm tracking-wider
+                    text-foreground focus-accessible transition-colors
+                    target:text-heading hover:text-heading
+                    focus-visible:text-foreground md:text-3xl
+                    [&:target-current]:font-bold [&:target-current]:text-heading
                   "
                 >
                   {section.label}
