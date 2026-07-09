@@ -17,7 +17,7 @@ export function CustomButton({
   ...rest
 }: CustomButtonProps) {
   const baseClassName =
-    "inline-block border px-4 py-3 text-center text-xl md:text-2xl lg:text-3xl font-bold font-ol-round-gothic tracking-wider transition-opacity hover:opacity-90 focus-accessible cursor-pointer";
+    "inline-block border  p-2 md:px-4 md:py-3 text-center text-[16px] md:text-base lg:text-2xl font-bold font-ol-round-gothic tracking-wider transition-opacity hover:opacity-90 focus-accessible cursor-pointer";
   const variantClassName = outline
     ? "border-heading border-2 bg-transparent text-foreground hover:bg-heading hover:text-primary-foreground"
     : "border-heading bg-heading text-primary-foreground";

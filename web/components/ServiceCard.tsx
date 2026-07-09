@@ -37,15 +37,15 @@ export function ServiceCard({ service }: ServiceCardProps) {
       >
         <h3
           className="
-            text-[20px] whitespace-pre-line text-primary-foreground
-            lg:text-[24px]
+            text-[16px] whitespace-pre-line text-primary-foreground
+            md:text-[20px] lg:text-[24px]
           "
         >
           {service.label}
         </h3>
         <p
           className="
-            font-ibm-plex-mono text-[60px] leading-none text-primary-foreground
+            font-ibm-plex-mono text-[40px] leading-none text-primary-foreground
             lg:text-[100px]
           "
         >

@@ -22,7 +22,7 @@ export function Services() {
       >
         <div
           className="
-            grid grid-cols-1 gap-5 md:grid-cols-2 lg:flex
+            grid grid-cols-2 gap-3 md:grid-cols-2 lg:flex
           "
         >
           {services.map((service) => (
