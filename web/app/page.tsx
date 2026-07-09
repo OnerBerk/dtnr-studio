@@ -24,12 +24,12 @@ export default function Home() {
       <Navbar />
 
       <main id="main-content">
-        <div className="md:hidden">
+        <div className="xl:hidden">
           <HeroMobile />
         </div>
         <div
           className="
-            hidden md:block
+            hidden xl:block
           "
         >
           <Hero />

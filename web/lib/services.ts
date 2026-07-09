@@ -2,13 +2,13 @@ export const services = [
   {
     id: "service-1",
     image: "/assets/demo1.jpeg",
-    label: "Architecture\n d'intérieur & rendu\n 3D",
+    label: "Architecture\n d'intérieur & rendu 3D",
     idx: "01",
   },
   {
     id: "service-2",
     image: "/assets/demo1.jpeg",
-    label: "Exterieur & rendu\n 3D",
+    label: "Exterieur &\n rendu 3D",
     idx: "02",
   },
   {

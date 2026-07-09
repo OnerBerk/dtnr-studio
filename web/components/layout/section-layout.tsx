@@ -14,7 +14,10 @@ const SectionLayout = ({
     <section
       id={id}
       aria-labelledby={ariaLabelledby}
-      className={"mx-auto w-full max-w-[1780px] " + className}
+      className={`
+        mx-auto w-full max-w-[1780px]
+        ${className ?? ""}
+      `}
     >
       {children}
     </section>

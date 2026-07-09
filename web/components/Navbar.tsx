@@ -42,7 +42,7 @@ export function Navbar() {
                     rounded-sm font-ol-round-gothic text-sm tracking-wider
                     text-foreground focus-accessible transition-colors
                     target:text-heading hover:text-heading
-                    focus-visible:text-foreground md:text-3xl
+                    focus-visible:text-foreground md:text-2xl lg:text-3xl
                     [&:target-current]:font-bold [&:target-current]:text-heading
                   "
                 >

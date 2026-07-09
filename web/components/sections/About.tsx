@@ -6,9 +6,7 @@ export function About() {
     <SectionLayout
       id="a-propos"
       ariaLabelledby="a-propos-heading"
-      className="
-        flex min-h-screen scroll-mt-16 px-4 md:px-0
-      "
+      className="flex scroll-mt-16 px-4"
     >
       <div
         className="
@@ -17,13 +15,17 @@ export function About() {
       >
         <h2
           className="
-            m-0 mx-auto p-0 text-center font-title text-[80px] leading-none
-            tracking-[-0.05em] text-foreground md:text-[150px]
+            m-0 mx-auto p-0 text-center font-title text-[50px] leading-none
+            tracking-[-0.05em] text-foreground md:text-[100px] lg:text-[150px]
           "
         >
           Le studio
         </h2>
-        <div className="relative">
+        <div
+          className="
+            relative md:min-h-[480px]
+          "
+        >
           <Image
             src="/assets/demo1.jpeg"
             alt=""

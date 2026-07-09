@@ -15,7 +15,11 @@ export function Services() {
       ariaLabelledby="services-heading"
       className="flex min-h-screen scroll-mt-16 p-5"
     >
-      <div className="mx-auto flex h-[80vh] w-full max-w-[1400px] flex-col gap-5">
+      <div
+        className="
+          mx-auto flex w-full max-w-[1400px] flex-col gap-5 lg:h-[80vh]
+        "
+      >
         <div
           className="
             grid grid-cols-1 gap-5 md:grid-cols-2 lg:flex

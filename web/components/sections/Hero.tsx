@@ -7,7 +7,9 @@ export function Hero() {
     <SectionLayout
       id="accueil"
       ariaLabelledby="accueil-heading"
-      className="flex min-h-screen scroll-mt-16"
+      className="
+        flex min-h-screen scroll-mt-16 xl:min-h-[1050px]
+      "
     >
       <div className="flex w-full flex-col gap-6">
         <div className="relative w-full">
@@ -34,9 +36,7 @@ export function Hero() {
               width={500}
               height={500}
             />
-            <CustomButton scrollToId="contact" className="w-60">
-              Nous contacter
-            </CustomButton>
+            <CustomButton scrollToId="contact">Nous contacter</CustomButton>
           </div>
 
           <div

@@ -9,32 +9,44 @@ export function ServiceCard({ service }: ServiceCardProps) {
   return (
     <div
       className="
-        group flex h-[80vh] w-full flex-col items-center justify-center
-        overflow-hidden transition-[flex-grow] duration-300 lg:flex-1
-        lg:hover:flex-[1.8]
+        group flex w-full flex-col overflow-hidden transition-[flex-grow]
+        duration-300 lg:h-[80vh] lg:flex-1 lg:hover:flex-[1.8]
       "
     >
-      <Image
-        src={service.image}
-        alt={service.label}
-        width={100}
-        height={100}
-        className="
-          inset-0 h-full w-full object-cover grayscale transition-[filter]
-          duration-300 group-hover:grayscale-0
-        "
-      />
       <div
         className="
-          mt-auto flex h-[35vh] w-full flex-col justify-between bg-heading p-2
+          relative aspect-square w-full lg:h-full lg:flex-1
         "
       >
-        <h3 className="text-[24px] whitespace-pre-line text-primary-foreground">
+        <Image
+          src={service.image}
+          alt={service.label}
+          fill
+          sizes="(max-width: 1024px) 50vw, 25vw"
+          className="
+            object-cover transition-[filter] duration-300 lg:grayscale
+            lg:group-hover:grayscale-0
+          "
+        />
+      </div>
+      <div
+        className="
+          flex h-[170px] w-full flex-col justify-between bg-heading p-2
+          lg:h-[35vh]
+        "
+      >
+        <h3
+          className="
+            text-[20px] whitespace-pre-line text-primary-foreground
+            lg:text-[24px]
+          "
+        >
           {service.label}
         </h3>
         <p
           className="
-            font-ibm-plex-mono text-[100px] leading-none text-primary-foreground
+            font-ibm-plex-mono text-[60px] leading-none text-primary-foreground
+            lg:text-[100px]
           "
         >
           {service.idx}.
