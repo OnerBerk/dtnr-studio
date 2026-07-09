@@ -34,7 +34,7 @@ export function Services() {
           className="mx-auto"
           onClick={() => router.push("/services-detail")}
         >
-          Voir nos services et tarifs
+          VOIR NOS SERVICES ET TARIFS
         </CustomButton>
       </div>
     </SectionLayout>

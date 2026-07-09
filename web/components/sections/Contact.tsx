@@ -6,6 +6,7 @@ import { CustomInput } from "@/components/ui/CustomInput";
 import { CustomTextarea } from "@/components/ui/CustomTextarea";
 import SectionLayout from "../layout/section-layout";
 import { CustomButton } from "../ui/CustomButton";
+import Image from "next/image";
 
 type ContactFormValues = {
   name: string;
@@ -57,22 +58,22 @@ export function Contact() {
       <h2
         id="contact-heading"
         className="
-          text-4xl font-bold tracking-tight text-heading sm:text-5xl
+          font-ol-round-gothic text-[30px] font-bold tracking-normal
+          text-heading sm:text-5xl
         "
       >
-        Contact
+        Formulaire de contact
       </h2>
 
       <div
         className="
-          grid w-full max-w-[1250px] grid-cols-1 gap-5 border-2 border-border
-          p-4 md:grid-cols-2
+          grid w-full max-w-[1250px] grid-cols-1 gap-5 p-4 md:grid-cols-2
         "
       >
         <form
           noValidate
           onSubmit={handleSubmit(onSubmit)}
-          className="mt-4 w-full max-w-xl space-y-1"
+          className="mt-4 w-full max-w-xl space-y-4"
         >
           <CustomInput
             id="contact-name"
@@ -182,14 +183,13 @@ export function Contact() {
           </CustomButton>
         </form>
 
-        <div
-          className="
-            col-span-1 hidden items-center justify-center border-2 border-border
-            text-center md:flex
-          "
-        >
-          Image a venir
-        </div>
+        <Image
+          className="mt-[-20px]  w-full rounded-lg object-cover"
+          src="/assets/demo5.png"
+          alt="DTNR Studio"
+          width={500}
+          height={500}
+        />
       </div>
     </SectionLayout>
   );

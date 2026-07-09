@@ -48,7 +48,7 @@ export function Portfolio() {
           <div className="absolute inset-0 flex items-center justify-center">
             <h1
               className="
-                text-title text-[20px] font-medium tracking-[0.2em]
+                text-title text-[30px] font-medium tracking-[0.2em]
                 md:text-[60px]
               "
             >
@@ -64,7 +64,7 @@ export function Portfolio() {
           "
           onClick={() => router.push("/portfolio-detail")}
         >
-          Voir plus
+          VOIR NOS PROJETS
         </CustomButton>
       </div>
     </SectionLayout>
