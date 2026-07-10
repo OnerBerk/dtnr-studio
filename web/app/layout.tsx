@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { SkipLink } from "@/components/ui/SkipLink";
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
 
@@ -73,7 +74,10 @@ export default function RootLayout({
       lang="fr"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased motion-safe:scroll-smooth`}
     >
-      <body className="flex min-h-full flex-col">{children}</body>
+      <body className="flex min-h-full flex-col">
+        <SkipLink />
+        {children}
+      </body>
     </html>
   );
 }

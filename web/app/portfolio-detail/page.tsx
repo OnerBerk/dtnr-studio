@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+
+import PageLayout from "@/components/layout/page-layout";
 
 export const metadata: Metadata = {
   title: "Notre portfolio",
@@ -7,19 +8,29 @@ export const metadata: Metadata = {
 
 export default function PortfolioDetailPage() {
   return (
-    <main
+    <PageLayout
+      ariaLabelledby="portfolio-detail-heading"
+      backHref="/#portfolio"
+      backLabel="Retour au portfolio"
       className="
         mx-auto flex min-h-dvh w-full max-w-[1400px] flex-col gap-6 p-5
       "
     >
-      <h1 className="text-4xl font-bold text-heading">Notre portfolio</h1>
-
-      <Link
-        href="/#portfolio"
-        className="w-fit text-lg underline underline-offset-4 focus-accessible"
+      <header
+        className="
+          mt-8 md:mt-14
+        "
       >
-        ← Retour au portfolio
-      </Link>
-    </main>
+        <h1
+          id="services-detail-heading"
+          className="
+            text-title mx-auto text-center text-3xl font-medium text-heading
+            md:text-5xl lg:text-8xl
+          "
+        >
+          Notre portfolio
+        </h1>
+      </header>
+    </PageLayout>
   );
 }
