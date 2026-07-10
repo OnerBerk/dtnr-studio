@@ -1,6 +1,5 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/sections/Hero";
-import { HeroMobile } from "@/components/sections/HeroMobile";
 import { About } from "@/components/sections/About";
 import { Portfolio } from "@/components/sections/Portfolio";
 import { Services } from "@/components/sections/Services";
@@ -15,16 +14,7 @@ export default function Home() {
       <Navbar />
 
       <PageLayout>
-        <div className="xl:hidden">
-          <HeroMobile />
-        </div>
-        <div
-          className="
-            hidden xl:block
-          "
-        >
-          <Hero />
-        </div>
+        <Hero />
         <About />
         <Services />
         <Portfolio />
