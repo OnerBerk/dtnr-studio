@@ -1,11 +1,31 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "Andale Teletext";
+  font-family: "Dolce Vita";
   src:
-    url("/fonts/Andale-Teletext-Regular.woff2") format("woff2"),
-    url("/fonts/Andale-Teletext-Regular.woff") format("woff");
+    url("/fonts/dolce_vita/Dolce Vita Light.woff2") format("woff2"),
+    url("/fonts/dolce_vita/Dolce Vita Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Dolce Vita";
+  src:
+    url("/fonts/dolce_vita/Dolce Vita.woff2") format("woff2"),
+    url("/fonts/dolce_vita/Dolce Vita.woff") format("woff");
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Dolce Vita";
+  src:
+    url("/fonts/dolce_vita/Dolce Vita Heavy Bold.woff2") format("woff2"),
+    url("/fonts/dolce_vita/Dolce Vita Heavy Bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -66,7 +86,7 @@
   --font-sans: "Helvetica Roman", var(--font-geist-sans), system-ui,
     sans-serif;
   --font-mono: var(--font-geist-mono);
-  --font-title: "Andale Teletext", var(--font-sans), system-ui, sans-serif;
+  --font-title: "Dolce Vita", var(--font-sans), system-ui, sans-serif;
   --font-ibm-plex-mono: "IBM Plex Mono", var(--font-mono), ui-monospace,
     monospace;
   --font-ol-round-gothic: "OL Round Gothic", var(--font-sans), system-ui,

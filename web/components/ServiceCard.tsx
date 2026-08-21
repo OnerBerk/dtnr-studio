@@ -1,5 +1,5 @@
 import Image from "next/image";
-import type { Service } from "@/lib/services";
+import type { Service } from "@/lib/types";
 
 type ServiceCardProps = {
   service: Service;

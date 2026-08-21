@@ -48,8 +48,8 @@ export function Portfolio() {
           <div className="absolute inset-0 flex items-center justify-center">
             <h1
               className="
-                text-title text-[30px] font-medium tracking-[0.2em]
-                md:text-[60px]
+                font-title text-[30px] font-medium tracking-[0.2em]
+                md:text-[80px]
               "
             >
               PORTFOLIO
@@ -60,7 +60,7 @@ export function Portfolio() {
         <CustomButton
           outline
           className="
-            mx-auto mt-[-25px] md:mt-[-50px] md:w-70
+            mx-auto mt-[-25px] md:mt-[-50px]
           "
           onClick={() => router.push("/portfolio-detail")}
         >

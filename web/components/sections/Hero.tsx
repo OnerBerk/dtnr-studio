@@ -56,8 +56,8 @@ export function Hero() {
             <h1
               id="accueil-heading"
               className="
-                w-full font-title text-[650px] leading-none tracking-[-0.1em]
-                text-heading
+                mt-5 w-full font-title text-[650px] leading-none
+                tracking-[0.02em] text-heading
               "
             >
               DTNR
@@ -78,7 +78,7 @@ export function Hero() {
                 sizes="550px"
                 aria-hidden
               />
-              <CustomButton scrollToId="contact" className="px-6 py-4 text-2xl">
+              <CustomButton className="translate-y-6" scrollToId="contact">
                 Nous contacter
               </CustomButton>
             </div>

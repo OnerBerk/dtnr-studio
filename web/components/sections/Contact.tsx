@@ -58,8 +58,8 @@ export function Contact() {
       <h2
         id="contact-heading"
         className="
-          font-ol-round-gothic text-[30px] font-bold tracking-normal
-          text-heading sm:text-5xl
+          font-title text-[30px] font-light tracking-normal text-heading
+          sm:text-5xl
         "
       >
         Formulaire de contact
@@ -174,11 +174,7 @@ export function Contact() {
             })}
           />
 
-          <CustomButton
-            type="submit"
-            disabled={isSubmitting}
-            className="text-xl"
-          >
+          <CustomButton type="submit" disabled={isSubmitting}>
             Envoyer
           </CustomButton>
         </form>

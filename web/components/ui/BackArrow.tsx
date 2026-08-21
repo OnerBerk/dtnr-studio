@@ -30,7 +30,7 @@ export function BackArrow({ href, label, className }: BackArrowProps) {
       </svg>
       <span
         className="
-          text-base text-foreground md:text-xl
+          font-title text-base text-foreground md:text-xl
         "
       >
         {label}

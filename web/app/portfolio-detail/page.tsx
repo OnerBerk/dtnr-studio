@@ -21,7 +21,7 @@ export default function PortfolioDetailPage() {
         <h1
           id="portfolio-detail-heading"
           className="
-            text-title mx-auto text-center text-3xl font-medium md:text-5xl
+            font-title mx-auto text-center text-3xl font-light md:text-5xl
             lg:text-7xl
           "
         >

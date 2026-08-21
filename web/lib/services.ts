@@ -1,4 +1,6 @@
-export const services = [
+import type { Service } from "@/lib/types";
+
+export const services: readonly Service[] = [
   {
     id: "service-1",
     image: "/assets/demo1.jpeg",
@@ -23,6 +25,4 @@ export const services = [
     label: "Conception +\n sourcing sur mesure",
     idx: "04",
   },
-] as const;
-
-export type Service = (typeof services)[number];
+];

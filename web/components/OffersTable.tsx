@@ -1,6 +1,6 @@
-import type { PricingOffer } from "@/lib/pricing-offers";
+import type { PricingOffer } from "@/lib/types";
 
-const cellClassName = "border-2 border-heading p-4 text-center font-medium";
+const cellClassName = "border-2 border-heading p-3 text-center font-medium";
 
 type OffersTableProps = {
   offers: readonly PricingOffer[];
@@ -10,8 +10,7 @@ export function OffersTable({ offers }: OffersTableProps) {
   return (
     <table
       className="
-        w-full border-collapse font-ol-round-gothic text-xl font-medium
-        md:text-2xl lg:text-4xl
+        w-full border-collapse text-xl md:text-2xl
       "
     >
       <caption className="sr-only">
@@ -27,11 +26,17 @@ export function OffersTable({ offers }: OffersTableProps) {
       <tbody>
         {offers.map((offer) => (
           <tr key={offer.name}>
-            <th scope="row" className={cellClassName}>
+            <th
+              scope="row"
+              className={`
+                ${cellClassName}
+                w-[28%] whitespace-pre-line
+              `}
+            >
               {offer.name}
             </th>
             <td className={cellClassName}>{offer.description}</td>
-            <td className={cellClassName}>choisir</td>
+            <td className={cellClassName}>Choisir</td>
           </tr>
         ))}
       </tbody>

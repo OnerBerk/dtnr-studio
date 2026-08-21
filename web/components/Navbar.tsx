@@ -1,59 +1,46 @@
-import { sections } from "@/lib/sections";
+"use client";
+
+import { useState } from "react";
+import Image from "next/image";
+
+import { DesktopNav } from "@/components/DesktopNav";
+import { MobileNavToggle } from "@/components/MobileNavToggle";
+import { MobileNavPanel } from "@/components/MobileNavPanel";
 
 export function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <header
-      className="
-        fixed inset-x-0 top-0 z-50 h-18 border-b border-foreground/10
-        bg-background/80 backdrop-blur
-      "
-    >
-      <div
-        className="
-          mx-auto grid h-full w-full grid-cols-[1fr_auto_1fr] items-center gap-4
-          px-4 sm:px-6
-        "
-      >
-        <div className="flex items-center">
-          <a
-            href="#top"
-            aria-label="DTNR Studio, retour en haut de la page"
-            className="
-              hidden rounded-sm text-sm font-bold tracking-tight shadow-sm
-              focus-accessible md:block md:text-lg md:shadow-none
-            "
-          >
-            DTNR
-          </a>
+    <header className="fixed inset-x-0 top-0 z-50">
+      <div className="relative">
+        <div
+          className="
+            relative z-10 mx-auto grid h-20 w-full grid-cols-[1fr_auto_1fr]
+            items-center gap-4 border-b border-foreground/10 bg-background/80
+            px-4 backdrop-blur sm:px-6
+          "
+        >
+          <div className="flex items-center">
+            <Image
+              src="/assets/logo-transparent.png"
+              alt="DTNR Studio"
+              width={100}
+              height={100}
+              className="
+                h-14 w-auto sm:h-18
+              "
+            />
+          </div>
+
+          <DesktopNav />
+
+          <MobileNavToggle
+            open={open}
+            onToggle={() => setOpen((prev) => !prev)}
+          />
         </div>
 
-        <nav aria-label="Navigation principale" className="justify-self-center">
-          <ul
-            className="
-              flex items-center gap-4 text-sm font-medium
-              [scroll-target-group:auto] sm:gap-6
-            "
-          >
-            {sections.map((section) => (
-              <li key={section.id}>
-                <a
-                  href={`#${section.id}`}
-                  className="
-                    rounded-sm font-ol-round-gothic text-sm tracking-wider
-                    text-foreground focus-accessible transition-colors
-                    target:text-heading hover:text-heading
-                    focus-visible:text-foreground md:text-2xl lg:text-3xl
-                    [&:target-current]:font-bold [&:target-current]:text-heading
-                  "
-                >
-                  {section.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-
-        <div aria-hidden="true" />
+        <MobileNavPanel open={open} onClose={() => setOpen(false)} />
       </div>
     </header>
   );

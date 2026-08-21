@@ -39,7 +39,7 @@ export default function ServicesDetailPage() {
         <h1
           id="services-detail-heading"
           className="
-            text-title mx-auto text-center text-3xl font-medium md:text-5xl
+            mx-auto text-center font-title text-3xl font-light md:text-5xl
             lg:text-7xl
           "
         >
@@ -49,7 +49,7 @@ export default function ServicesDetailPage() {
 
       <section
         aria-labelledby="tarifs-list-heading"
-        className="flex flex-col gap-7"
+        className="flex flex-col gap-5"
       >
         <h2 id="tarifs-list-heading" className="sr-only">
           Formules et tarifs DTNR Studio
@@ -74,7 +74,7 @@ export default function ServicesDetailPage() {
         </div>
         <h2
           className="
-            text-title mx-auto w-full text-center text-3xl font-medium
+            mx-auto mt-20 w-full text-center font-title text-3xl font-light
             text-heading md:text-5xl lg:text-7xl
           "
         >
@@ -83,52 +83,42 @@ export default function ServicesDetailPage() {
 
         <div
           className="
-            grid w-full grid-cols-1 gap-4 md:grid-cols-3
+            mb-10 grid w-full grid-cols-1 gap-5 md:grid-cols-3
           "
         >
           <div className="col-span-1">
             <p className="text-xl font-medium">
-              <span className="font-ibm-plex-mono text-2xl font-bold text-heading">
-                01.ÉTUDE{" "}
+              <span className="font-title text-2xl font-bold text-heading">
+                01. ÉTUDE{" "}
               </span>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-              quos. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor
-              sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+              Analyse du projet en étudiant ses contraintes, atouts en précisant
+              votre direction artistiques et votre vision esthétique.
             </p>
           </div>
-          <div className="col-span-1 mt-10">
+          <div
+            className="
+              col-span-1 md:mt-10
+            "
+          >
             <p className="text-xl font-medium">
-              <span className="font-ibm-plex-mono text-2xl font-bold text-heading">
-                02.CONCEPTION{" "}
+              <span className="font-title text-2xl font-bold text-heading">
+                02. CONCEPTION{" "}
               </span>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-              quos. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor
-              sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+              Réalisation et validation de vos plans 2D et des modélisations 3D
+              photoréalistes.
             </p>
           </div>
-          <div className="col-span-1 mt-20">
+          <div
+            className="
+              col-span-1 md:mt-20
+            "
+          >
             <p className="text-xl font-medium">
-              <span className="font-ibm-plex-mono text-2xl font-bold text-heading">
-                03.RENDU{" "}
+              <span className="font-title text-2xl font-bold text-heading">
+                03. RENDU{" "}
               </span>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-              quos. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor
-              sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+              Livraison de vos projets complets comprenant plans 2D, shopping
+              list et rendus 3D photoréalistes.
             </p>
           </div>
         </div>
